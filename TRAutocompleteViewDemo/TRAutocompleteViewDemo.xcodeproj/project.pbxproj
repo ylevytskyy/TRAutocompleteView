@@ -120,21 +120,6 @@
 			name = GoogleMaps;
 			sourceTree = "<group>";
 		};
-		690763D6A9A217A454AB8187 /* thirdparty */ = {
-			isa = PBXGroup;
-			children = (
-				69076A3DCC5965F98581CA8C /* AFNetworking */,
-			);
-			name = thirdparty;
-			sourceTree = "<group>";
-		};
-		69076A3DCC5965F98581CA8C /* AFNetworking */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = AFNetworking;
-			sourceTree = "<group>";
-		};
 		76E6DCA716DE10E500F53C02 = {
 			isa = PBXGroup;
 			children = (
@@ -142,7 +127,6 @@
 				76E6DCB916DE10E500F53C02 /* TRAutocompleteViewDemo */,
 				76E6DCB216DE10E500F53C02 /* Frameworks */,
 				76E6DCB116DE10E500F53C02 /* Products */,
-				690763D6A9A217A454AB8187 /* thirdparty */,
 				54D2ABF54F537FB882A1C75A /* Pods */,
 			);
 			sourceTree = "<group>";
