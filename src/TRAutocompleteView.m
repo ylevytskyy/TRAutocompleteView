@@ -133,8 +133,6 @@
         kbHeight = kbSize.width;
     }
     
-    CGPoint textPosition = [_queryTextField convertPoint:_queryTextField.bounds.origin toView:nil]; //Taking in account Y position of queryTextField relatively to it's Window
-    
     CGRect transformedQueryTextFieldFrame = [_queryTextField.superview convertRect:_queryTextField.frame toView:_contextController.view];
     CGFloat calculatedY = transformedQueryTextFieldFrame.origin.y + transformedQueryTextFieldFrame.size.height + self.topMargin;
     CGFloat calculatedHeight = contextViewHeight - calculatedY - kbHeight;

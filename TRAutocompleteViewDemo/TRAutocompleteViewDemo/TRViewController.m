@@ -51,11 +51,12 @@
     [_textField setLeftPadding:9];
     _autocompleteView = [TRAutocompleteView autocompleteViewBindedTo:_textField
                                                          usingSource:[[TRGoogleMapsAutocompleteItemsSource alloc]
-                                                                                                           initWithMinimumCharactersToTrigger:2
-                                                                                                                                       apiKey:@"ENTER YOUR GOOGLE API KEY HERE"]
+                                                                      initWithMinimumCharactersToTrigger:2
+                                                                      apiKey:@"AIzaSyCXnNNND9WH7zW52vL41j3H1Wy2K9vyap8"]
                                                          cellFactory:[[TRGoogleMapsAutocompletionCellFactory alloc]
-                                                                                                             initWithCellForegroundColor:[UIColor lightGrayColor]
-                                                                                                                                fontSize:14]
+                                                                      initWithCellForegroundColor:[UIColor lightGrayColor]
+                                                                      fontName: nil
+                                                                      fontSize:14]
                                                         presentingIn:self];
     _autocompleteView.topMargin = -5;
     _autocompleteView.backgroundColor = [UIColor colorWithRed:(27) / 255.0f

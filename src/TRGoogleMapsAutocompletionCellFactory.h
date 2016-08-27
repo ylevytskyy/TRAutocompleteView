@@ -32,6 +32,6 @@
 
 @interface TRGoogleMapsAutocompletionCellFactory : NSObject<TRAutocompletionCellFactory>
 
-- (id)initWithCellForegroundColor:(UIColor *)foregroundColor fontSize:(CGFloat)fontSize;
+- (id)initWithCellForegroundColor:(UIColor *)foregroundColor fontName:(NSString *)fontName fontSize:(CGFloat)fontSize;
 
 @end

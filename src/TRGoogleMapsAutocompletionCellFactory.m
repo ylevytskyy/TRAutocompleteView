@@ -46,15 +46,17 @@
 {
     UIColor *_foregroundColor;
     CGFloat _fontSize;
+    NSString *_fontName;
 }
 
-- (id)initWithCellForegroundColor:(UIColor *)foregroundColor fontSize:(CGFloat)fontSize
+- (id)initWithCellForegroundColor:(UIColor *)foregroundColor fontName:(NSString *)fontName fontSize:(CGFloat)fontSize
 {
     self = [super init];
     if (self)
     {
         _foregroundColor = foregroundColor;
         _fontSize = fontSize;
+        _fontName = fontName;
     }
 
     return self;
@@ -65,7 +67,7 @@
     TRGoogleMapsAutocompletionCell *cell = [[TRGoogleMapsAutocompletionCell alloc]
                                                                             initWithStyle:UITableViewCellStyleDefault
                                                                           reuseIdentifier:identifier];
-    cell.textLabel.font = [UIFont systemFontOfSize:_fontSize];
+    cell.textLabel.font = _fontName == nil ? [UIFont systemFontOfSize:_fontSize] : [UIFont fontWithName:_fontName size:_fontSize];
     cell.textLabel.textColor = _foregroundColor;
 
     cell.backgroundColor = [UIColor clearColor];
